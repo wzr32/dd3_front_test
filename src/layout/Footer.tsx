@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           </h3>
           <Button
             title="Work with us"
-            addedClass="bg-amber-500 text-black py-4 w-44 sm:w-36 py-2"
+            addedClass="bg-amber-500 text-black py-4 w-44 sm:w-36 py-2 mx-auto md:mx-0"
           />
         </div>
         <hr />
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           {[1, 2, 3].map((_, index) => (
-            <ul key={index} className="md:mb-5">
+            <ul key={index} className="mb-5 text-center">
               <li className="font-bold">Column Heading</li>
               {[1, 2, 3, 4].map((_, i) => (
                 <li className="cursor-pointer" key={`column_item-${i}`}>
