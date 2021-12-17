@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <section className="main-gradient">
       <div className="container mx-auto">
         <div className="py-14 flex flex-col justify-center md:justify-between md:flex-row">
-          <h3 className="font-bold mb-5 lg:text-8xl md:text-6xl sm:text-4xl">
+          <h3 className="font-bold text-3xl text-center mb-5 md:text-5xl sm:text-4xl sm:text-left">
             Make your dreams a <span style={{ color: '#FFAC12' }}>reality</span>
           </h3>
           <Button

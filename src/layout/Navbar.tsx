@@ -28,7 +28,7 @@ const Navbar: React.FC<INavbarProps> = ({ propData }) => {
   );
 
   return (
-    <header className="main-gradient">
+    <header className="main-gradient px-3 md:px-0">
       {openMenu && (
         <nav className="mobile fixed w-screen h-screen bg-black text-4xl flex flex-col justify-center items-center">
           <i
