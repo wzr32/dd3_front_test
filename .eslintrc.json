@@ -1,0 +1,57 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+	"rules": {
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn",
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"semi": ["error", "always"],
+		"indent": ["error", 2],
+		"arrow-parens": "error",
+		"no-prototype-builtins": "off",
+		// TODO: corregir error en los archivos con este regla sin desactivar la regla
+		"no-loop-func": "off",
+		"@typescript-eslint/no-loop-func": "off",
+		"@typescript-eslint/quotes": ["error", "single", { "avoidEscape": true }],
+		"@typescript-eslint/explicit-function-return-type": [
+		"error",
+		{
+			"allowExpressions": true,
+			"allowTypedFunctionExpressions": true
+		}
+		],
+		"@typescript-eslint/no-use-before-define": ["error"],
+		"react/prop-types": "off",
+		"react/destructuring-assignment": "off",
+		"react/no-unused-prop-types": "error",
+		"react/jsx-props-no-spreading": "off",
+		"react/require-default-props": [
+		"error",
+		{
+			"forbidDefaultForRequired": true
+		}
+		]
+	},
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true,
+		"jest": true
+	},
+	"ignorePatterns": ["node_modules", "build", "dist", "public"]
+}
